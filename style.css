@@ -86,7 +86,7 @@ nav ul {
 #reset{
   display: block;
   background-color: rgb(224 66 88 / 30%);
-  color: rgb(255, 255, 255,0.9);
+  color: rgba(255, 255, 255,0.9);
   padding: 10px 15px;
   text-align: center;
   cursor: pointer;
