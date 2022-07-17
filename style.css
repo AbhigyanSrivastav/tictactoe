@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Roboto", sans-serif;
+  background-color: #2C3333;
+  color: white;
+}
+nav {
+  color: white;
+  background-color: darkslateblue;
+  height: 50px;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  font-family: "Edu NSW ACT Foundation", cursive;
+  font-weight: 600;
+}
+
+nav ul {
+  list-style: none;
+}
+
+.game-container {
+      display: grid;
+      justify-content: center;
+      margin-top: 50px;
+      grid-template-columns: repeat(2,40vw);
+}
+
+
+.container {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: repeat(3, 12vw);
+  grid-template-rows: repeat(3, 12vw);
+  justify-content: center;
+}
+
+.box {
+  border: 2px solid green;
+  font-size: 8vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box:hover {
+  background-color: rgb(138, 43, 226, 0.2);
+}
+
+.info {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+}
+
+.info>h1{
+  font-size: 3vw;
+  text-transform: capitalize;
+}
+
+#title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+
+}
+
+#title .turn{
+  font-weight: 600;
+  font-size: 2vw;
+}
+
+#reset{
+  display: block;
+  background-color: rgb(224 66 88 / 30%);
+  padding: 10px 15px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 20px;
+  border-radius: 10px;
+  font-family: "Edu NSW ACT Foundation", cursive;
+}
+
+.imgBox img {
+  width: 0;
+  transition: width 0.5s ease-in-out;
+}
+
+.br0 {
+  border-right: 0px;
+}
+
+.bl0 {
+  border-left: 0px;
+}
+
+.bt0 {
+  border-top: 0px;
+}
+
+.bb0 {
+  border-bottom: 0px;
+}
+
+@media screen and (max-width: 1100px) {
+  
+  nav{
+    justify-content: center;
+  }
+
+  .game-container{
+    margin-top: 20px;
+    grid-template-columns: repeat(1,100vw);
+   grid-template-rows: 50vw 30vw;
+   gap: 10px;
+  }
+
+  .container{
+    grid-template-columns: repeat(3, 12vw);
+    grid-template-rows: repeat(3, 12vw);
+    align-content: center;
+  }
+  .info{
+    gap: 5vw;
+  }
+
+  .info>h1{
+    font-size: 5vw;
+  }
+
+  #title .turn{
+    font-weight: 550;
+    font-size: 4vw;
+  }
+
+  #reset{
+    margin-top: 10px;
+  }
+}
